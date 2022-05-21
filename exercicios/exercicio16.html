@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercício 16</title>
+  </head>
+  <body>
+    <script>
+      function validarEmail(email) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+          return true;
+        }
+        return false;
+      }
+
+      const email = prompt('Informe um email: ')
+
+      const emailValido = validarEmail(email)
+      if (emailValido) {
+        alert('O email fornecido é válido')
+      } else {
+        alert('O email fornecido não é válido')
+      }
+    </script>
+  </body>
+</html>
