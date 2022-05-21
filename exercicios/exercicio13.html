@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício 13</title>
+  </head>
+  <body>
+    <script>
+      const palavra = prompt('Informe uma palavra: ')
+
+      let palindromo = true;
+      for (let i = 0, j = palavra.length - 1; i < j; i++, j--) {
+        if (palavra.charAt(i) !== palavra.charAt(j)) {
+          palindromo = false;
+          break
+        }
+      }
+
+      if (palindromo) {
+        alert('A palavra fornecida é um palindromo')
+      } else {
+        alert('A palavra fornecida  não é um palindromo')
+      }
+    </script>
+  </body>
+</html>
