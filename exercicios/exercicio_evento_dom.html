@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+     <title>Exercício DOM Básico e Atributos</title>
+     <script type="text/javascript">
+       window.onload = function() {
+        const link1 = document.querySelector('#enlace_1');
+        const conteudo1 = document.querySelector('#conteudo_1') ;
+      
+        const link2 = document.querySelector('#enlace_2');
+        const conteudo2 = document.querySelector('#conteudo_2') ;
+      
+        const link3 = document.querySelector('#enlace_3');
+        const conteudo3 = document.querySelector('#conteudo_3') ;
+      
+        link1.addEventListener('click', function(e) {
+          e.preventDefault();
+      
+          if (conteudo1.style.display === 'none') {
+              conteudo1.style.display = 'block';
+          } else {
+            conteudo1.style.display = 'none';
+          }
+        })
+      
+        link2.addEventListener('click', function(e) {
+          e.preventDefault();
+      
+          if (conteudo2.style.display === 'none') {
+              conteudo2.style.display = 'block';
+          } else {
+            conteudo2.style.display = 'none';
+          }
+        })
+      
+        link3.addEventListener('click', function(e) {
+          e.preventDefault();
+      
+          if (conteudo3.style.display === 'none') {
+              conteudo3.style.display = 'block';
+          } else {
+            conteudo3.style.display = 'none';
+          }
+        })
+       }
+      </script>
+</head>
+
+<body>
+
+<p id="conteudo_1">[1] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+<a id="enlace_1" href="#">Ocultar Conteúdo</a>
+
+<br/>
+
+<p id="conteudo_2">[2] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+<a id="enlace_2" href="#">Ocultar Conteúdo</a>
+
+<br/>
+<p id="conteudo_3">[3] Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+<a id="enlace_3" href="#">Ocultar Conteúdo</a>
+
+</body>
+</html>
