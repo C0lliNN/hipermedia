@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+     <title>Exercício DOM Básico e Atributos</title>
+     <script type="text/javascript">
+       window.onload = function() {
+          const input = document.querySelector('input');
+
+          input.onkeyup = function() {
+            const span = document.querySelector('span');
+
+            span.innerText = input.value;
+          }
+       }
+      </script>
+</head>
+
+<body>
+  <input type="text">
+  <p>Você está digitiando: "<span></span>";.</p>
+</body>
+</html>
